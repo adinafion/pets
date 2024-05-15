@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('fundal.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: cursive;
+    padding-bottom:5%;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+@media (max-width: 400px) {
+    header {
+        flex-wrap: wrap;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: rgba(255, 255, 255, 0.678);
+    z-index: 100;
+    min-height: 50px;
+}
+
+header>#nav-bar {
+    margin: auto;
+}
+
+@media (max-width: 400px) {
+    .logo>img {
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+}
+
+.logo>img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 70%;
+}
+
+#pisic {
+    width: 30%;
+}
+
+@media (max-width: 400px) {
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width:900px) {
+    .ceva {
+        flex-direction: column;
+    }
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-bottom: 0;
+}
+
+#nav-bar>.ceva {
+    height: max-content;
+}
+
+nav li {
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+@media (max-width:900px) {
+    .rand>.nav-link {
+        border-radius: 0;
+    }
+}
+
+@media (min-width:1076px) {
+    .rand>.nav-link {
+        border-radius: 0;
+        padding: 20px;
+        border-radius: 30px;
+    }
+}
+
+.rand>.nav-link:hover {
+    background-color: #7e5835;
+    text-shadow: 0 0 10px #e1d2b8,
+        0 0 10px #e1d2b8,
+        0 0 10px #e1d2b8,
+        0 0 10px #e1d2b8,
+        0 0 10px #e1d2b8;
+    color: white;
+}
+
+li>.nav-link {
+    font-size: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #d2b48c;
+    border-radius: 30%;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+@media (max-width:430px) {
+    #hero {
+        margin-block-start: 30px;
+    }
+}
+
+#tabletedecioco,
+#biscuitisipraji,
+#praline,
+#batoane,
+#video,
+#crema {
+    margin-block-start: 10%;
+}
+
+#crema {
+    margin-block-end: 15%;
+}
+
+.imm {
+    width: 100%;
+}
+
+.corp_principal {
+    margin-top: 3%;
+    display: block;
+    background-color: #FFCC8F;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: dotted;
+    border-color: black;
+    border-width: 10px;
+    padding:3%;
+}
+
+.corp_principal>.infoorm {
+    text-shadow: 0 0 10px white,
+        0 0 10px white,
+        0 0 10px white;
+    font-size: 110%;
+}
+.h11 {
+    text-shadow: 0 0 10px rgb(176, 79, 221),
+        0 0 10px white,
+        0 0 10px rgb(176, 79, 221);
+    font-size: 160%;
+}
+.slider {
+    width: 40%;
+    height: 40vh;
+    border-radius: 5%;
+    background-image: url(p1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 2% 2%;
+    animation: slide 30s infinite;
+    float: right;
+}
+
+@keyframes slide {
+    10% {
+        background-image: url(p2.jpg);
+    }
+
+    20% {
+        background-image: url(p3.jpg);
+    }
+
+    30% {
+        background-image: url(p4.jpg);
+    }
+
+    40% {
+        background-image: url(p5.jpg);
+    }
+
+    50% {
+        background-image: url(p6.jpg);
+    }
+
+    60% {
+        background-image: url(p7.jpg);
+    }
+
+    70% {
+        background-image: url(hamster.jpg);
+    }
+
+    80% {
+        background-image: url(p9.jpg);
+    }
+
+    90% {
+        background-image: url(p10.jpg);
+    }
+
+    100% {
+        background-image: url(p1.jpg);
+    }
+}
